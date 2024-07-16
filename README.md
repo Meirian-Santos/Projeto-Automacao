@@ -22,13 +22,32 @@ Está descrito o código do produto, marca, tipo, preço unitário, custo e obse
     • Enviar as informações para o sistema
     • Repetir o cadastro até acabar o cadastro de todos os produtos
 
-### Importando os dados
+#### Importando os dados
 
 Utilizaremos a biblioteca pandas para importar a base de dados e visualizar como estão organizados. A base de dados é o arquivo produtos.csv, é necessário que o arquivo esteja no mesmo local em que criou o seu arquivo em Python. Assim, podemos utilizar apenas o comando pd.read_csv e colocar o nome do arquivo. Utilize o print para visualizar os dados:
 
 ```import pyautogui```
 ``` import pandas```
-#### Importe os dados dos produtos
+#### Importando os dados dos produtos
 
 ```tabela = pd.read_csv("produtos.csv")```
 ```print(tabela)```
+
+#### Instalando a boblioteca pyautogui
+
+Depois de ter feito a importação da biblioteca pyautogui, que é a biblioteca que vai permitir que você tenha controle do mouse e do seu teclado para fazer as automações no seu computador utilizando o Python. Para fazer a instalação da biblioteca basta abrir o seu terminal:
+
+```pip install pyautogui``` 
+#### Link da documentação da biblioteca pyautogui
+
+https://pyautogui.readthedocs.io/en/latest/
+
+#### Comandos
+
+Os 3 comandos utilizados são:
+
+ • Pyautogui.press – Serve para pressionar uma tecla do seu teclado
+ 
+ • Pyautogui.write – Serve para escrever com o teclado (como se estivesse digitando em tempo real)
+ 
+ • Pyautogui.click – Serve para clicar com o mouse
