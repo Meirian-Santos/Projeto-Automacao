@@ -61,6 +61,25 @@ Esse é o código do arquivo pegar_posição.py, que é o código que te permite
 ![Captura de tela 2 1](https://github.com/user-attachments/assets/6ea21a90-ef6d-42d4-b587-07172bb72a29)
 
 ![Captura de tela 2](https://github.com/user-attachments/assets/b8b612c2-9798-4889-9d38-cd1202d95768)
+ _Atenção este é um código independente para pegar a posição do mouse, garantindo que vai clicar no local correto_
 
-** Atenção é um código independente só para que você consiga pegar a 
-posição do mouse nos momentos em que for clicar para garantir que vai clicar no local correto
+ #### Abrindo o Navegador
+ 
+- Primeiramente vamos usar o comando pyautogui.PAUSE, que é para definir qual o tempo de espera entre os comandos do Pyautogui.
+- Logo depois nós temos o comando pyautogui.press, para pressionar uma tecla do teclado.
+- Em seguida use o “win” que é a tecla de Windows do computador, para abrirmos o menu iniciar.
+- Use o comando pyautogui.write, para escrever.
+- Aqui escrevi Edge que é o navegador que utilizei, mas você pode alterar para o seu navegador de preferência.
+- Agora abra o navegador e escreva o link de onde o login para cadastrar os produtos serão feitos.
+- Após o login tem o time.sleep para esperar que o carragamento do site para depois avançar.
+
+![Captura de tela 4](https://github.com/user-attachments/assets/1e39f513-67b4-42ed-aed4-e2a8e8e74dc5)
+
+#### Login do sistema
+
+![Captura de tela 5](https://github.com/user-attachments/assets/f8b5c61a-8096-4a4f-b354-7a343cd99236)
+
+- Foi utilizado o pyautogui.click, pois já continha a posição de onde o click iria ser feito. Então é muito importante que já tenha as posições definidas de onde vai clicar tanto para 				escrever o login quanto para clicar no botão para entrar no sistema.
+- O comando pyautogui.press(“tab”) tem como função a utilização da tecla tab para passar para o próximo campo, evitando dar dois cliques, e passar automaticamente para o próxi.mo campo
+
+![Captura de tela 2024-07-17 113222](https://github.com/user-attachments/assets/da72e18d-bd35-4ce9-a79e-30e5142345f8)
