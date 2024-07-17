@@ -46,8 +46,21 @@ https://pyautogui.readthedocs.io/en/latest/
 
 Os 3 comandos utilizados são:
 
- • Pyautogui.press – Serve para pressionar uma tecla do seu teclado
+ • Pyautogui.press – Para pressionar uma tecla do seu teclado
  
- • Pyautogui.write – Serve para escrever com o teclado (como se estivesse digitando em tempo real)
+ • Pyautogui.write – Para escrever com o teclado (como se estivesse digitando em tempo real)
  
- • Pyautogui.click – Serve para clicar com o mouse
+ • Pyautogui.click – Para clicar com o mouse
+
+O será pyautogui.click será ncessário para passar uma posição x e y a partir da sua função de clique do mouse. Lembrando que a posção vai depender do tamanho do seu monitor.
+
+#### Posição do mouse
+
+Esse é o código do arquivo pegar_posição.py, que é o código que te permite pegar a posição atual do seu mouse para que você saiba exatamente onde clicar na sua automação.
+
+![Captura de tela 2 1](https://github.com/user-attachments/assets/6ea21a90-ef6d-42d4-b587-07172bb72a29)
+
+![Captura de tela 2](https://github.com/user-attachments/assets/b8b612c2-9798-4889-9d38-cd1202d95768)
+
+** Atenção é um código independente só para que você consiga pegar a 
+posição do mouse nos momentos em que for clicar para garantir que vai clicar no local correto
