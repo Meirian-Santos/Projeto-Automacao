@@ -97,6 +97,11 @@ Esse é o código do arquivo pegar_posição.py, que é o código que te permite
          - 2.4 Buscando uma informação na linha x (dependendo de quantas vezes vai estar repetindo) na coluna “codigo”.
            - 2.5 A verificação com a estrutura condicional if (se) para se certificar que o campo de observação possui ou não alguma informação.
              - 2.6 Buscaremos se a informação de observação não está vazia, se não estiver preenchereremos o campo de obs, caso contrário, seguiremos sem fazer nada, já que nem todos os campos possuem     
-              observação
+              observação.
 
+## Conclusão
+
+O objetivo deste projeto é de apresentar uma esrtatégia de otimização de tempo/trabalho ao utilizar a linguagem python para a automação de tarefas repetitivas. A ideia de poder cadastrar 300 ou até mais produtos em menos de 10 minutos, com as informações corretas e economizar tempo para fazer outras atividades, resultando em um aumento de produtividade é muito importante. A partir da biblioteca pyautogui da pra reproduzir os passos que poderia ser feito de forma manual. Você poderá sair para algum compromisso e deixar rodando fazendo toda a automação sme precocupação.
+
+![obrigada pela atençao](https://github.com/user-attachments/assets/b6011029-9159-4b82-8e5d-1dd6eba2cd2e)
 
