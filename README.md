@@ -9,7 +9,7 @@ Os dados que foram utilizados são as informações que estão dentro do arquivo
 _![Imagem de produtos](https://github.com/user-attachments/assets/b3afeb78-96c2-4a59-b344-820a0a67c9e6)
 
 Está descrito o código do produto, marca, tipo, preço unitário, custo e observação.Porém, as informações estão no formato csv, dificultando um pouco a visualização.  Outro fator importante é que temos 264 linhas de informação, portanto,teria que preencher 6 informações no sistema para cada linha da base de dados.Com o objetivo de evitar esse tipo de trabalho manual é que vamos criar automações com Python, simplificando e facilitando o trabalho deixando-o mais rápido, automático e sem chances de inserir informações erradas.
-#### Etapas:
+### Etapas:
 **Ao rodar o programa vamos ter as seguintes ações para completar o nosso cadastro:**
 
 ![imagem Etapa1](https://github.com/user-attachments/assets/e2b05c33-8a95-49b0-910c-7898d85fe26f)
@@ -22,27 +22,27 @@ Está descrito o código do produto, marca, tipo, preço unitário, custo e obse
     • Enviar as informações para o sistema
     • Repetir o cadastro até acabar o cadastro de todos os produtos
 
-#### Importando os dados
+## Importando os dados
 
 Utilizaremos a biblioteca pandas para importar a base de dados e visualizar como estão organizados. A base de dados é o arquivo produtos.csv, é necessário que o arquivo esteja no mesmo local em que criou o seu arquivo em Python. Assim, podemos utilizar apenas o comando pd.read_csv e colocar o nome do arquivo. Utilize o print para visualizar os dados:
 
 ```import pyautogui```
 ``` import pandas```
-#### Importando os dados dos produtos
+## Importando os dados dos produtos
 
 ```tabela = pd.read_csv("produtos.csv")```
 ```print(tabela)```
 
-#### Instalando a boblioteca pyautogui
+## Instalando a boblioteca pyautogui
 
 Depois de ter feito a importação da biblioteca pyautogui, que é a biblioteca que vai permitir que você tenha controle do mouse e do seu teclado para fazer as automações no seu computador utilizando o Python. Para fazer a instalação da biblioteca basta abrir o seu terminal:
 
 ```pip install pyautogui``` 
-#### Link da documentação da biblioteca pyautogui
+## Link da documentação da biblioteca pyautogui
 
 https://pyautogui.readthedocs.io/en/latest/
 
-#### Comandos
+## Comandos
 
 Os 3 comandos utilizados são:
 
@@ -54,7 +54,7 @@ Os 3 comandos utilizados são:
 
 O será pyautogui.click será ncessário para passar uma posição x e y a partir da sua função de clique do mouse. Lembrando que a posção vai depender do tamanho do seu monitor.
 
-#### Posição do mouse
+## Posição do mouse
 
 Esse é o código do arquivo pegar_posição.py, que é o código que te permite pegar a posição atual do seu mouse para que você saiba exatamente onde clicar na sua automação.
 
@@ -63,7 +63,7 @@ Esse é o código do arquivo pegar_posição.py, que é o código que te permite
 ![Captura de tela 2](https://github.com/user-attachments/assets/b8b612c2-9798-4889-9d38-cd1202d95768)
  _Atenção este é um código independente para pegar a posição do mouse, garantindo que vai clicar no local correto_
 
- #### Abrindo o Navegador
+ ## Abrindo o Navegador
  
 - Primeiramente vamos usar o comando pyautogui.PAUSE, que é para definir qual o tempo de espera entre os comandos do Pyautogui.
 - Logo depois nós temos o comando pyautogui.press, para pressionar uma tecla do teclado.
@@ -75,7 +75,7 @@ Esse é o código do arquivo pegar_posição.py, que é o código que te permite
 
 ![Captura de tela 4](https://github.com/user-attachments/assets/1e39f513-67b4-42ed-aed4-e2a8e8e74dc5)
 
-#### Login do sistema
+## Login do sistema
 
 ![Captura de tela 5](https://github.com/user-attachments/assets/f8b5c61a-8096-4a4f-b354-7a343cd99236)
 
@@ -83,3 +83,20 @@ Esse é o código do arquivo pegar_posição.py, que é o código que te permite
 - O comando pyautogui.press(“tab”) tem como função a utilização da tecla tab para passar para o próximo campo, evitando dar dois cliques, e passar automaticamente para o próxi.mo campo
 
 ![Captura de tela 2024-07-17 113222](https://github.com/user-attachments/assets/da72e18d-bd35-4ce9-a79e-30e5142345f8)
+
+## Cadastro dos produtos
+
+- 1. Agora será feito o registro das informações no sistema. Neste momento a estrutura de repetição "_for_" será usado, percorrendo todas as linhas da base de dados para registrar cada uma das informações dos produtos e preenchendo todas as informações no sistema a partir do "_tab_" e clicando em enviar.
+
+![Captura de tela 8](https://github.com/user-attachments/assets/09084cd6-6e33-46f7-bb80-eb331b15b657)
+
+ - 2.0 Temos o comando de click para clicar no primeiro campo onde vamos preencher a primeira informação.
+   - 2.1 Pyautogui.write – Comando para escrever.
+     - 2.2 Str É um comando para transformar em string.
+       - 2.3 (texto) .loc – Comando de busca de informação, neste caso dentro da nossa tabela.
+         - 2.4 Buscando uma informação na linha x (dependendo de quantas vezes vai estar repetindo) na coluna “codigo”.
+           - 2.5 A verificação com a estrutura condicional if (se) para se certificar que o campo de observação possui ou não alguma informação.
+             - 2.6 Buscaremos se a informação de observação não está vazia, se não estiver preenchereremos o campo de obs, caso contrário, seguiremos sem fazer nada, já que nem todos os campos possuem     
+              observação
+
+
